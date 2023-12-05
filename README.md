@@ -23,6 +23,13 @@ Visit the [Deployed Link](https://656eee67d748a017274199e4--delightful-strudel-5
 
 └── images/
 
+# PageSpeed Insights
+
+<img width="1680" alt="Screenshot 2023-12-05 at 3 27 23 PM" src="https://github.com/AnshKathpal/Travelopia-TakeHomeTest/assets/115460552/2c3721c8-3ad2-4705-ac3e-d01dbec93cf0">
+
+<img width="1680" alt="Screenshot 2023-12-05 at 3 27 27 PM" src="https://github.com/AnshKathpal/Travelopia-TakeHomeTest/assets/115460552/51b57dea-9935-4a58-9a60-afef6048b739">
+
+
 # Images
 
 <img width="1680" alt="Screenshot 2023-12-05 at 2 56 35 PM" src="https://github.com/AnshKathpal/Travelopia-TakeHomeTest/assets/115460552/45955917-852d-4da9-ad52-3c263ebc465f">
