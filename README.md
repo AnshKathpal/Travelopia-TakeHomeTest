@@ -13,4 +13,10 @@ Visit the [Deployed Link](https://656eee67d748a017274199e4--delightful-strudel-5
 
 => JavaScript
 
+# File Structure
+
+├── index.html
+├── styles.css
+├── script.js
+└── images/
 
