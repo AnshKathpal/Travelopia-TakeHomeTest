@@ -46,12 +46,10 @@ const toggleClick = () => {
 handleResize();
 window.addEventListener("resize", handleResize);
 
-
-
 //  Toggling the Email Form for smaller screen sizes
 let enquiryEmail = document.getElementById("enquiry");
 let enquiryForm = document.getElementById("enquiryForm");
-let toggleSwitch = document.querySelector(".toggleSwitch")
+let toggleSwitch = document.querySelector(".toggleSwitch");
 
 function adjustDisplay() {
   if (window.innerWidth >= 768) {
@@ -78,5 +76,4 @@ enquiryEmail.addEventListener("click", () => {
 window.addEventListener("resize", adjustDisplay);
 //  Toggling the Email Form for smaller screen sizes
 
-
-
+module.exports = handleResize;
