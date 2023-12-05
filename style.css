@@ -40,10 +40,34 @@
 }
 
 .logo {
-  border: 1px solid red;
   width: 10%;
-  height: 60px;
+  /* height: 60px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  
 }
+
+
+.logo p:nth-child(1){
+  color:rgb(73,97,97);
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 24px;
+}
+
+.logo p:nth-child(2){
+  color:rgb(73,97,97);
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 350;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+
 
 .links {
   width: 50%;
@@ -311,9 +335,37 @@ form button {
     padding-left: 0;
   }
 
+ 
+
+
   .logo {
-    width: 30%;
-  }
+ width: 30%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+
+.logo p:nth-child(1){
+  color:rgb(73,97,97);
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.logo p:nth-child(2){
+  color:rgb(73,97,97);
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 350;
+  font-size: 10px;
+  line-height: 24px;
+}
 
   .contact {
     width: 70%;

@@ -4,52 +4,47 @@ let originalContent = textDescription.innerHTML.trim();
 let contentLength = 350;
 let isToggle = true;
 
-const textSplit = () => {
+const handleResize = () => {
   if (window.innerWidth <= 768) {
     if (textDescription.textContent.length > contentLength) {
       textDescription.innerHTML =
         textDescription.innerHTML.substring(0, contentLength) + "....";
       toggleButton.textContent = "Show More";
+      isToggle = true;
       console.log(true);
     } else {
+      textDescription.innerHTML = originalContent;
       toggleButton.textContent = "Show Less";
+      isToggle = false;
       console.log(false);
+    }
+    toggleButton.style.display = "block";
+    toggleButton.addEventListener("click", toggleClick);
+  } else {
+    textDescription.innerHTML = originalContent;
+    toggleButton.style.display = "none";
+  }
+};
+
+const toggleClick = () => {
+  if (!isToggle) {
+    if (textDescription.innerHTML.length > contentLength) {
+      textDescription.innerHTML =
+        textDescription.innerHTML.substring(0, contentLength) + "....";
+      toggleButton.textContent = "Show More";
+      console.log(true);
     }
   } else {
     textDescription.innerHTML = originalContent;
     toggleButton.textContent = "Show Less";
     console.log(false);
   }
-};
-textSplit();
-window.addEventListener("resize", textSplit);
 
-const toggleFunctionality = () => {
-  if (window.innerWidth <= 768) {
-    toggleButton.style.display = "block";
-    toggleButton.addEventListener("click", () => {
-      if (!isToggle) {
-        if (textDescription.innerHTML.length > contentLength) {
-          textDescription.innerHTML =
-            textDescription.innerHTML.substring(0, contentLength) + "....";
-          toggleButton.textContent = "Show More";
-          console.log(true);
-        }
-      } else {
-        textDescription.innerHTML = originalContent;
-        toggleButton.textContent = "Show Less";
-        console.log(false);
-      }
-
-      isToggle = !isToggle;
-    });
-  } else {
-    toggleButton.style.display = "none";
-  }
+  isToggle = !isToggle;
 };
 
-toggleFunctionality();
-window.addEventListener("resize", toggleFunctionality);
+handleResize();
+window.addEventListener("resize", handleResize);
 
 
 
@@ -57,7 +52,6 @@ window.addEventListener("resize", toggleFunctionality);
 let enquiryEmail = document.getElementById("enquiry");
 let enquiryForm = document.getElementById("enquiryForm");
 let toggleSwitch = document.querySelector(".toggleSwitch")
-
 
 function adjustDisplay() {
   if (window.innerWidth >= 768) {
