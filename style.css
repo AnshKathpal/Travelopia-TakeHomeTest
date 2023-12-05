@@ -27,7 +27,65 @@
 #below-nav {
   width: 100%;
   height: 9dvh;
+  background-color: white;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
   border: 1px solid rgb(230, 230, 230);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding-left: 50px;
+}
+
+.logo {
+  border: 1px solid red;
+  width: 10%;
+  height: 60px;
+}
+
+.links {
+  width: 50%;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links a {
+  text-decoration: none;
+  color: #5b6a6a;
+}
+
+.contact {
+  width: 23%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact img {
+  width: 5%;
+}
+
+.contact button {
+  background-color: rgb(20, 168, 182);
+  color: white;
+  padding: 10px;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  border-radius: 6%;
+  border: none;
+}
+
+.hamBurger {
+  display: none;
 }
 
 #info-nav {
@@ -124,13 +182,39 @@
   line-height: 24px;
 }
 
+#call {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#call p:nth-child(1) {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 350;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+#call p:nth-child(2) {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: rgb(20, 168, 182);
+}
+
+#call p:nth-child(2):hover {
+  color: #077e86;
+}
+
 #mainContainer p {
   color: #5b6a6a;
   padding-right: 70px;
 }
 
 .leftInner {
-  width: 60%;
+  width: 70%;
 }
 
 .heading {
@@ -142,13 +226,46 @@
 }
 
 .rightInner {
-  width: 40%;
+  width: 30%;
   display: grid;
-  grid-template-rows: 100px 600px 100px 100px 100px;
+  grid-template-rows: 100px auto 100px 100px 100px;
   gap: 10px;
   padding: 10px;
 }
 
+#enquiry {
+  display: none;
+}
+
+#enquiryForm {
+  background-color: rgb(55, 62, 62);
+  padding: 30px;
+  color: white;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 350;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form button {
+  background-color: rgb(20, 168, 182);
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.inputs {
+  width: 100%;
+  font-size: 16px;
+  color: black;
+  padding: 5px;
+}
 .rightInnerDivs {
   border: 1px solid rgb(230, 230, 230);
 }
@@ -160,8 +277,70 @@
   line-height: 24px;
 }
 
+#liveChat {
+  background-color: rgb(230, 230, 230);
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: rgb(20, 168, 182);
+  padding: 30px;
+  margin-top: auto;
+}
+
+#reqBrochure {
+  background-color: rgb(230, 230, 230);
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  padding: 30px;
+  margin-top: auto;
+  color: rgb(20, 168, 182);
+}
+
 @media screen and (max-width: 768px) {
   #upper-nav {
+    display: none;
+  }
+
+  #below-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .contact {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contact img {
+    width: 10%;
+  }
+
+  .contact button {
+    display: none;
+  }
+
+  #info-nav {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #info-nav div:nth-child(2) {
+    display: none;
+  }
+  #info-nav div:nth-child(3) {
+    display: none;
+  }
+  #info-nav div:nth-child(4) {
     display: none;
   }
 
@@ -185,12 +364,116 @@
     padding-right: 0px;
   }
 
+  #mountainImg {
+    width: 100%;
+    height: 28dvh;
+    position: relative;
+  }
+
   .rightInner {
     width: 80%;
     display: grid;
-    grid-template-rows: 100px 600px 100px 100px 100px;
+    grid-template-rows: 100px 100px auto 100px 100px 100px;
     gap: 10px;
     padding: 10px;
     margin: auto;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .imgText {
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    color: white;
+    padding: 20px;
+    top: 70%;
+    left: 50%;
+    background-color: rgba(34, 36, 36, 0.6);
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(3px);
+  }
+
+  .imgText p:nth-child(1) {
+    font-family: "IBM Plex", serif;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .imgText p:nth-child(2) {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  #sections {
+    display: none;
+  }
+
+  .heading {
+    font-size: 23px;
+    line-height: 28px;
+  }
+
+  .textDescription {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  #call p:nth-child(1) {
+    font-size: 15px;
+  }
+
+  #call p:nth-child(2) {
+    font-size: 15px;
+  }
+
+  #toggleButton {
+    color: rgb(20, 168, 182);
+    width: max-content;
+    margin: auto;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+
+  #enquiry {
+    display: flex;
+    background-color: rgb(230, 230, 230);
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: rgb(20, 168, 182);
+    padding: 30px;
+    margin-top: auto;
+    justify-content: space-between;
+  }
+
+  #enquiryForm {
+    display: none;
+  }
+
+  .hamBurger {
+    background-color: black;
+    width: 12%;
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20% 20% 20% 20%;
+  }
+
+  .hamBurger span {
+    color: white;
+    margin: auto;
+    width: 60%;
+    height: 2px;
+    background-color: white;
   }
 }
