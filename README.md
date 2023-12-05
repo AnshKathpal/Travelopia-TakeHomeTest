@@ -38,7 +38,7 @@ Visit the [Deployed Link](https://656eee67d748a017274199e4--delightful-strudel-5
 
 <img width="1680" alt="Screenshot 2023-12-05 at 2 56 58 PM" src="https://github.com/AnshKathpal/Travelopia-TakeHomeTest/assets/115460552/a4a5bc56-fc8e-4924-86e3-88ebc22f9f3e">
 
-<img width="1680" alt="Screenshot 2023-12-05 at 2 56 58 PM" src="https://github.com/AnshKathpal/Travelopia-TakeHomeTest/assets/115460552/cba99a46-489e-4898-8fd8-fb1d112f0164">
+<img width="1680" alt="Screenshot 2023-12-05 at 2 57 05 PM" src="https://github.com/AnshKathpal/Travelopia-TakeHomeTest/assets/115460552/fcac33f1-8976-4825-bfbe-5b2391367ca7">
 
 <img width="1680" alt="Screenshot 2023-12-05 at 2 56 17 PM" src="https://github.com/AnshKathpal/Travelopia-TakeHomeTest/assets/115460552/c5f73f97-da20-403b-8604-f0f0c633b84b">
 
